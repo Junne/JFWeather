@@ -1,0 +1,6 @@
+framework module Pods_JFWeather {
+  umbrella header "Pods-JFWeather-umbrella.h"
+
+  export *
+  module * { export * }
+}

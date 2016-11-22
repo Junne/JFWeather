@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8553C4E42BCE6B1338F8DECF /* Pods_JFWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88B1ABA4F9611D130492A81 /* Pods_JFWeatherTests.framework */; };
+		DD1D4AD5B070297099E51469 /* Pods_JFWeatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF39DB3B286A49EF989C0BEA /* Pods_JFWeatherUITests.framework */; };
+		E30D554CD44F788E1C784CB3 /* Pods_JFWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F30CCCA7EC2893ED704841B /* Pods_JFWeather.framework */; };
 		F53531C61DE2FAE600551A32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53531C51DE2FAE600551A32 /* AppDelegate.swift */; };
 		F53531C81DE2FAE600551A32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53531C71DE2FAE600551A32 /* ViewController.swift */; };
 		F53531CB1DE2FAE600551A32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53531C91DE2FAE600551A32 /* Main.storyboard */; };
@@ -34,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1031FC3A24DE38AFC711578F /* Pods-JFWeatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFWeatherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFWeatherUITests/Pods-JFWeatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F30CCCA7EC2893ED704841B /* Pods_JFWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JFWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37BAC8162152BC86ECF292CD /* Pods-JFWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFWeatherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFWeatherTests/Pods-JFWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
+		73EC92FBD984EAE7A7F60EAA /* Pods-JFWeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFWeatherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFWeatherUITests/Pods-JFWeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A88B1ABA4F9611D130492A81 /* Pods_JFWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JFWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF39DB3B286A49EF989C0BEA /* Pods_JFWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JFWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9AF6C5A58052D838A7D237 /* Pods-JFWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFWeather/Pods-JFWeather.release.xcconfig"; sourceTree = "<group>"; };
+		C1CECF621B3AE6E5D7E01501 /* Pods-JFWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFWeatherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFWeatherTests/Pods-JFWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F53531C21DE2FAE600551A32 /* JFWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53531C51DE2FAE600551A32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F53531C71DE2FAE600551A32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,7 @@
 		F53531E11DE2FAE600551A32 /* JFWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53531E51DE2FAE600551A32 /* JFWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFWeatherUITests.swift; sourceTree = "<group>"; };
 		F53531E71DE2FAE600551A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C9A09860589567BDE774CD /* Pods-JFWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFWeather/Pods-JFWeather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E30D554CD44F788E1C784CB3 /* Pods_JFWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8553C4E42BCE6B1338F8DECF /* Pods_JFWeatherTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD1D4AD5B070297099E51469 /* Pods_JFWeatherUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5957DE6932AFD84662B8456 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F30CCCA7EC2893ED704841B /* Pods_JFWeather.framework */,
+				A88B1ABA4F9611D130492A81 /* Pods_JFWeatherTests.framework */,
+				AF39DB3B286A49EF989C0BEA /* Pods_JFWeatherUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB09F907EB540440DE9670B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6C9A09860589567BDE774CD /* Pods-JFWeather.debug.xcconfig */,
+				BF9AF6C5A58052D838A7D237 /* Pods-JFWeather.release.xcconfig */,
+				C1CECF621B3AE6E5D7E01501 /* Pods-JFWeatherTests.debug.xcconfig */,
+				37BAC8162152BC86ECF292CD /* Pods-JFWeatherTests.release.xcconfig */,
+				1031FC3A24DE38AFC711578F /* Pods-JFWeatherUITests.debug.xcconfig */,
+				73EC92FBD984EAE7A7F60EAA /* Pods-JFWeatherUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F53531B91DE2FAE600551A32 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				F53531D91DE2FAE600551A32 /* JFWeatherTests */,
 				F53531E41DE2FAE600551A32 /* JFWeatherUITests */,
 				F53531C31DE2FAE600551A32 /* Products */,
+				EB09F907EB540440DE9670B1 /* Pods */,
+				B5957DE6932AFD84662B8456 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F53531EA1DE2FAE600551A32 /* Build configuration list for PBXNativeTarget "JFWeather" */;
 			buildPhases = (
+				FEB4B38D26B9DD1E62B11EAF /* [CP] Check Pods Manifest.lock */,
 				F53531BE1DE2FAE600551A32 /* Sources */,
 				F53531BF1DE2FAE600551A32 /* Frameworks */,
 				F53531C01DE2FAE600551A32 /* Resources */,
+				7F91459FBBAB48402B174F1F /* [CP] Embed Pods Frameworks */,
+				892C4B1C2E7F70DFD364D31A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F53531ED1DE2FAE600551A32 /* Build configuration list for PBXNativeTarget "JFWeatherTests" */;
 			buildPhases = (
+				3713D86CDFF890084B465F0C /* [CP] Check Pods Manifest.lock */,
 				F53531D21DE2FAE600551A32 /* Sources */,
 				F53531D31DE2FAE600551A32 /* Frameworks */,
 				F53531D41DE2FAE600551A32 /* Resources */,
+				8A24DE3515435C88E866AB10 /* [CP] Embed Pods Frameworks */,
+				515EE2F1B0F4CC5A2213DA1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F53531F01DE2FAE600551A32 /* Build configuration list for PBXNativeTarget "JFWeatherUITests" */;
 			buildPhases = (
+				E56065793BE3386512AFEF3E /* [CP] Check Pods Manifest.lock */,
 				F53531DD1DE2FAE600551A32 /* Sources */,
 				F53531DE1DE2FAE600551A32 /* Frameworks */,
 				F53531DF1DE2FAE600551A32 /* Resources */,
+				04B60D286810CCB855D07B13 /* [CP] Embed Pods Frameworks */,
+				A6521A0A1A452E2996197299 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +242,6 @@
 				TargetAttributes = {
 					F53531C11DE2FAE600551A32 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = QM8BHT4C8A;
 						ProvisioningStyle = Automatic;
 					};
 					F53531D51DE2FAE600551A32 = {
@@ -256,6 +304,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04B60D286810CCB855D07B13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFWeatherUITests/Pods-JFWeatherUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3713D86CDFF890084B465F0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		515EE2F1B0F4CC5A2213DA1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFWeatherTests/Pods-JFWeatherTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F91459FBBAB48402B174F1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFWeather/Pods-JFWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		892C4B1C2E7F70DFD364D31A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFWeather/Pods-JFWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A24DE3515435C88E866AB10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFWeatherTests/Pods-JFWeatherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6521A0A1A452E2996197299 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFWeatherUITests/Pods-JFWeatherUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E56065793BE3386512AFEF3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FEB4B38D26B9DD1E62B11EAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F53531BE1DE2FAE600551A32 /* Sources */ = {
@@ -411,9 +597,10 @@
 		};
 		F53531EB1DE2FAE600551A32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6C9A09860589567BDE774CD /* Pods-JFWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QM8BHT4C8A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JFWeather/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -425,9 +612,10 @@
 		};
 		F53531EC1DE2FAE600551A32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF9AF6C5A58052D838A7D237 /* Pods-JFWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QM8BHT4C8A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JFWeather/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -439,6 +627,7 @@
 		};
 		F53531EE1DE2FAE600551A32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1CECF621B3AE6E5D7E01501 /* Pods-JFWeatherTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +643,7 @@
 		};
 		F53531EF1DE2FAE600551A32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37BAC8162152BC86ECF292CD /* Pods-JFWeatherTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +659,7 @@
 		};
 		F53531F11DE2FAE600551A32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1031FC3A24DE38AFC711578F /* Pods-JFWeatherUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QM8BHT4C8A;
@@ -483,6 +674,7 @@
 		};
 		F53531F21DE2FAE600551A32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73EC92FBD984EAE7A7F60EAA /* Pods-JFWeatherUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QM8BHT4C8A;
@@ -514,6 +706,7 @@
 				F53531EC1DE2FAE600551A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F53531ED1DE2FAE600551A32 /* Build configuration list for PBXNativeTarget "JFWeatherTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +715,7 @@
 				F53531EF1DE2FAE600551A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F53531F01DE2FAE600551A32 /* Build configuration list for PBXNativeTarget "JFWeatherUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +724,7 @@
 				F53531F21DE2FAE600551A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
