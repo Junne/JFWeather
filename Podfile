@@ -5,7 +5,8 @@
 target 'JFWeather' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
 # Uncomment this line to define a global platform for your project
- platform :ios, '9.0'
+inhibit_all_warnings!
+platform :ios, '9.0'
 # Uncomment this line if you're using Swift
 use_frameworks!
 

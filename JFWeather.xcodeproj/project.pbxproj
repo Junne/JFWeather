@@ -242,6 +242,7 @@
 				TargetAttributes = {
 					F53531C11DE2FAE600551A32 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = QM8BHT4C8A;
 						ProvisioningStyle = Automatic;
 					};
 					F53531D51DE2FAE600551A32 = {
@@ -600,7 +601,7 @@
 			baseConfigurationReference = F6C9A09860589567BDE774CD /* Pods-JFWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = QM8BHT4C8A;
 				INFOPLIST_FILE = JFWeather/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -615,7 +616,7 @@
 			baseConfigurationReference = BF9AF6C5A58052D838A7D237 /* Pods-JFWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = QM8BHT4C8A;
 				INFOPLIST_FILE = JFWeather/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
