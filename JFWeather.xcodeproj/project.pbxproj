@@ -17,6 +17,7 @@
 		F53531D01DE2FAE600551A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53531CE1DE2FAE600551A32 /* LaunchScreen.storyboard */; };
 		F53531DB1DE2FAE600551A32 /* JFWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53531DA1DE2FAE600551A32 /* JFWeatherTests.swift */; };
 		F53531E61DE2FAE600551A32 /* JFWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53531E51DE2FAE600551A32 /* JFWeatherUITests.swift */; };
+		F5BC9C8F1DF933C400E2D1CB /* JFNetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC9C8E1DF933C400E2D1CB /* JFNetService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		F53531E11DE2FAE600551A32 /* JFWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53531E51DE2FAE600551A32 /* JFWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFWeatherUITests.swift; sourceTree = "<group>"; };
 		F53531E71DE2FAE600551A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5BC9C8E1DF933C400E2D1CB /* JFNetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFNetService.swift; sourceTree = "<group>"; };
 		F6C9A09860589567BDE774CD /* Pods-JFWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFWeather/Pods-JFWeather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 		F53531C41DE2FAE600551A32 /* JFWeather */ = {
 			isa = PBXGroup;
 			children = (
+				F5BC9C8D1DF92DC100E2D1CB /* Network */,
 				F53531C51DE2FAE600551A32 /* AppDelegate.swift */,
 				F53531C71DE2FAE600551A32 /* ViewController.swift */,
 				F53531C91DE2FAE600551A32 /* Main.storyboard */,
@@ -163,6 +166,14 @@
 				F53531E71DE2FAE600551A32 /* Info.plist */,
 			);
 			path = JFWeatherUITests;
+			sourceTree = "<group>";
+		};
+		F5BC9C8D1DF92DC100E2D1CB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F5BC9C8E1DF933C400E2D1CB /* JFNetService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,6 +462,7 @@
 			files = (
 				F53531C81DE2FAE600551A32 /* ViewController.swift in Sources */,
 				F53531C61DE2FAE600551A32 /* AppDelegate.swift in Sources */,
+				F5BC9C8F1DF933C400E2D1CB /* JFNetService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
