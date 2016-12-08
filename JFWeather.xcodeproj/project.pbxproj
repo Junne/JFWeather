@@ -18,6 +18,7 @@
 		F53531DB1DE2FAE600551A32 /* JFWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53531DA1DE2FAE600551A32 /* JFWeatherTests.swift */; };
 		F53531E61DE2FAE600551A32 /* JFWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53531E51DE2FAE600551A32 /* JFWeatherUITests.swift */; };
 		F5BC9C8F1DF933C400E2D1CB /* JFNetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC9C8E1DF933C400E2D1CB /* JFNetService.swift */; };
+		F5BC9C921DF94F3700E2D1CB /* JFRequestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC9C911DF94F3700E2D1CB /* JFRequestRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		F53531E51DE2FAE600551A32 /* JFWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFWeatherUITests.swift; sourceTree = "<group>"; };
 		F53531E71DE2FAE600551A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5BC9C8E1DF933C400E2D1CB /* JFNetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFNetService.swift; sourceTree = "<group>"; };
+		F5BC9C911DF94F3700E2D1CB /* JFRequestRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFRequestRoute.swift; sourceTree = "<group>"; };
 		F6C9A09860589567BDE774CD /* Pods-JFWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFWeather/Pods-JFWeather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				F5BC9C8E1DF933C400E2D1CB /* JFNetService.swift */,
+				F5BC9C911DF94F3700E2D1CB /* JFRequestRoute.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				F53531C81DE2FAE600551A32 /* ViewController.swift in Sources */,
 				F53531C61DE2FAE600551A32 /* AppDelegate.swift in Sources */,
 				F5BC9C8F1DF933C400E2D1CB /* JFNetService.swift in Sources */,
+				F5BC9C921DF94F3700E2D1CB /* JFRequestRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
