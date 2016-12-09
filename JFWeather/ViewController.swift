@@ -13,7 +13,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let request = UserRequest(name: "onevcat")
+        request.send { (user) in
+            if let user = user {
+                print("\(user.message) from \(user.name)")
+            }
+        }
 
     }
     
