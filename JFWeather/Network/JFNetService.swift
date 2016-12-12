@@ -9,10 +9,32 @@
 import UIKit
 import Alamofire
 
+//let openWeatherAPIKey = "80d0f95a328777c02bcd358c813795e1"
+let openWeatherAPIKey = "b3e0155a067f8cdc5a2990e9aa83a222"
+
+
+protocol JSONDecodable {
+    static func parse(data: Data) -> Self?
+}
+
+protocol JFClient {
+    var host: String { get }
+    func send<T: JFRequest>(_ r: T, handler: @escaping(T.Response?) -> Void)
+}
+
+protocol JFRequest {
+    var name: WeatherAPI { get }
+    var path: String { get }
+    var method: Alamofire.HTTPMethod { get }
+    var parameters: [String: Any] { get }
+    associatedtype Response: JSONDecodable
+}
+
+
+
 class JFNetService: NSObject {
     
-    let openWeatherAPIKey = "83d12c4e4664fbff167c8f114c0679a4"
-    let openWeatherBaseUrlString = "http://api.openweathermap.org/data/2.5/weather"
+//    let openWeatherBaseUrlString = "http://api.openweathermap.org/data/2.5/weather"
     let headers = ["Accept": "application/json"]
     
     var alamofireManager: SessionManager?
@@ -31,24 +53,43 @@ class JFNetService: NSObject {
         self.alamofireManager = manager
     }
     
-    
-
-
 }
 
-extension JFNetService {
-    
-    func getWeatherInfo() {
+extension JFNetService: JFClient {
+    internal var host: String {
+        return "http://api.openweathermap.org"
+    }
+
+    public func send<T : JFRequest>(_ r: T, handler: @escaping (T.Response?) -> Void) {
+        let url = host.appending(r.path)
         
-        let weatherParameters = ["q": "Beijing", "appid": openWeatherAPIKey]
-        
-        Alamofire.request(openWeatherBaseUrlString, method: .get, parameters: weatherParameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
+        Alamofire.request(url, method: r.method, parameters: r.parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
             
             guard response.result.isSuccess else {
                 print("Error while fetching remote data:\(response)")
                 return
             }
+            
             print(response.result.value ?? "No Value")
+            
+            handler(nil)
+            
         }
+        
     }
+
+    
+//    func getWeatherInfo() {
+//        
+//        let weatherParameters = ["q": "Beijing", "appid": openWeatherAPIKey]
+//        
+//        Alamofire.request(openWeatherBaseUrlString, method: .get, parameters: weatherParameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
+//            
+//            guard response.result.isSuccess else {
+//                print("Error while fetching remote data:\(response)")
+//                return
+//            }
+//            print(response.result.value ?? "No Value")
+//        }
+//    }
 }

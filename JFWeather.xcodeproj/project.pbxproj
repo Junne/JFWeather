@@ -19,6 +19,7 @@
 		F53531E61DE2FAE600551A32 /* JFWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53531E51DE2FAE600551A32 /* JFWeatherUITests.swift */; };
 		F543A8251DFA8B96006E8017 /* JFNetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F543A8241DFA8B96006E8017 /* JFNetRequest.swift */; };
 		F543A8271DFA9B62006E8017 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F543A8261DFA9B62006E8017 /* User.swift */; };
+		F543A82A1DFE7A7B006E8017 /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F543A8291DFE7A7B006E8017 /* CurrentWeatherModel.swift */; };
 		F5BC9C8F1DF933C400E2D1CB /* JFNetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC9C8E1DF933C400E2D1CB /* JFNetService.swift */; };
 		F5BC9C921DF94F3700E2D1CB /* JFRequestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC9C911DF94F3700E2D1CB /* JFRequestRoute.swift */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		F53531E71DE2FAE600551A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F543A8241DFA8B96006E8017 /* JFNetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFNetRequest.swift; sourceTree = "<group>"; };
 		F543A8261DFA9B62006E8017 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F543A8291DFE7A7B006E8017 /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherModel.swift; sourceTree = "<group>"; };
 		F5BC9C8E1DF933C400E2D1CB /* JFNetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFNetService.swift; sourceTree = "<group>"; };
 		F5BC9C911DF94F3700E2D1CB /* JFRequestRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFRequestRoute.swift; sourceTree = "<group>"; };
 		F6C9A09860589567BDE774CD /* Pods-JFWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFWeather/Pods-JFWeather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		F53531C41DE2FAE600551A32 /* JFWeather */ = {
 			isa = PBXGroup;
 			children = (
+				F543A8281DFE7A52006E8017 /* Model */,
 				F5BC9C8D1DF92DC100E2D1CB /* Network */,
 				F53531C51DE2FAE600551A32 /* AppDelegate.swift */,
 				F53531C71DE2FAE600551A32 /* ViewController.swift */,
@@ -172,6 +175,14 @@
 				F53531E71DE2FAE600551A32 /* Info.plist */,
 			);
 			path = JFWeatherUITests;
+			sourceTree = "<group>";
+		};
+		F543A8281DFE7A52006E8017 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F543A8291DFE7A7B006E8017 /* CurrentWeatherModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F5BC9C8D1DF92DC100E2D1CB /* Network */ = {
@@ -474,6 +485,7 @@
 				F543A8271DFA9B62006E8017 /* User.swift in Sources */,
 				F53531C61DE2FAE600551A32 /* AppDelegate.swift in Sources */,
 				F5BC9C8F1DF933C400E2D1CB /* JFNetService.swift in Sources */,
+				F543A82A1DFE7A7B006E8017 /* CurrentWeatherModel.swift in Sources */,
 				F5BC9C921DF94F3700E2D1CB /* JFRequestRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

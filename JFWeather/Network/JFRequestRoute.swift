@@ -7,7 +7,42 @@
 //
 
 import UIKit
+import Alamofire
 
-class JFRequestRoute: NSObject {
 
+public enum WeatherAPI {
+    case currentWeather
+}
+
+
+struct WeatherRequest: JFRequest {
+    var name: WeatherAPI 
+    
+    var path: String {
+        switch name {
+        case .currentWeather:
+            return "/data/2.5/weather"
+        }
+    }
+    
+    var method: Alamofire.HTTPMethod {
+        switch name {
+        case .currentWeather:
+            return .get
+        }
+    }
+    
+    var parameters: [String : Any] {
+        switch name {
+        case .currentWeather:
+            return ["q": "Beijing", "appid": openWeatherAPIKey]
+        }
+    }
+    typealias Response = CurrentWeatherModel
+}
+
+extension CurrentWeatherModel: JSONDecodable {
+    static func parse(data: Data) -> CurrentWeatherModel? {
+        return CurrentWeatherModel()
+    }
 }
