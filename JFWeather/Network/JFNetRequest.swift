@@ -24,6 +24,7 @@ protocol JFNetRequest {
 protocol Client {
     var host: String { get }
     func send<T: JFNetRequest>(_ r: T, handler: @escaping(T.Response?) -> Void)
+    
 }
 
 protocol Decodable {

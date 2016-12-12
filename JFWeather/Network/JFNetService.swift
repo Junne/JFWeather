@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import RxSwift
 
 //let openWeatherAPIKey = "80d0f95a328777c02bcd358c813795e1"
 let openWeatherAPIKey = "b3e0155a067f8cdc5a2990e9aa83a222"
@@ -20,6 +21,7 @@ protocol JSONDecodable {
 protocol JFClient {
     var host: String { get }
     func send<T: JFRequest>(_ r: T, handler: @escaping(T.Response?) -> Void)
+    func send<T: JFRequest>(_ r: T) -> Observable<String>
 }
 
 protocol JFRequest {
@@ -77,6 +79,26 @@ extension JFNetService: JFClient {
         }
         
     }
+    
+    func send<T : JFRequest>(_ r: T) -> Observable<String> {
+//        let url = host.appending(r.path)
+//        
+//        return Observable.create { [unowned self] observer -> Disposable in
+//            
+//            Alamofire.request(url, method: r.method, parameters: r.parameters, encoding: JSONEncoding.default, headers: self.headers).responseJSON { response in
+//                switch response.result {
+//                case .success(let repos):
+//                    observer.onNext(repos as! String)
+//                    observer.onCompleted()
+//                }
+//                
+//            }
+//            return
+//        }
+    }
+    
+    
+    
 
     
 //    func getWeatherInfo() {
