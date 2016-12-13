@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 
 class ViewController: UIViewController {
@@ -14,15 +15,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        URLSessionClient().send(UserRequest(name: "onevcat")) { user in
+        
+//        URLSessionClient().send(UserRequest(name: "onevcat")) { user in
+//            
+//            print("name = \(user?.name), message = \(user?.message)")
+//            
+//        }
+        
+        JFNetService.shareInstance.send(WeatherRequest(name: .currentWeather)) { weather  in
             
-            print("name = \(user?.name), message = \(user?.message)")
-            
+            print("code = \(weather?.code), message = \(weather?.message)")
         }
         
-        JFNetService.shareInstance.send(WeatherRequest(name: .currentWeather)) {_ in 
-            
-        }
+        let disposeBag = DisposeBag()
+        
+        JFNetService.shareInstance.send(WeatherRequest(name: .currentWeather))
+            .subscribe({ result in
+                print(result)
+            }).addDisposableTo(disposeBag)
+        
 
     }
     

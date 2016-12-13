@@ -15,7 +15,8 @@ let openWeatherAPIKey = "b3e0155a067f8cdc5a2990e9aa83a222"
 
 
 protocol JSONDecodable {
-    static func parse(data: Data) -> Self?
+//    static func parse(data: Data) -> Self?
+    static func parse(json: [String: Any]) -> Self?
 }
 
 protocol JFClient {
@@ -36,8 +37,7 @@ protocol JFRequest {
 
 class JFNetService: NSObject {
     
-//    let openWeatherBaseUrlString = "http://api.openweathermap.org/data/2.5/weather"
-    let headers = ["Accept": "application/json"]
+    internal let headers = ["Accept": "application/json"]
     
     var alamofireManager: SessionManager?
     
@@ -67,51 +67,62 @@ extension JFNetService: JFClient {
         
         Alamofire.request(url, method: r.method, parameters: r.parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
             
-            guard response.result.isSuccess else {
-                print("Error while fetching remote data:\(response)")
-                return
+            
+            switch response.result {
+            case .success(let json):
+                print(json)
+                let weather = T.Response.parse(json: json as! [String : Any])
+                handler(weather)
+                
+            case .failure(let error):
+                print(error)
             }
+
             
-            print(response.result.value ?? "No Value")
+//            guard response.result.isSuccess else {
+//                print("Error while fetching remote data:\(response)")
+//                return
+//            }
+//            
+//            print(response.result.value ?? "No Value")
             
-            handler(nil)
+//            let json = JSON(data: response.result.value)
+            
+            
+            
+            
+//            if let data = response.result.value {
+//                let json = JSON(data: response.result.value as! Data) {
+//                    let result = T.Response.parse(json: json)
+//                    handler(result)
+//                }
+//            }
+            
+//            handler(nil)
             
         }
         
     }
     
     func send<T : JFRequest>(_ r: T) -> Observable<String> {
-//        let url = host.appending(r.path)
-//        
-//        return Observable.create { [unowned self] observer -> Disposable in
-//            
-//            Alamofire.request(url, method: r.method, parameters: r.parameters, encoding: JSONEncoding.default, headers: self.headers).responseJSON { response in
-//                switch response.result {
-//                case .success(let repos):
-//                    observer.onNext(repos as! String)
-//                    observer.onCompleted()
-//                }
-//                
-//            }
-//            return
-//        }
+        let url = host.appending(r.path)
+        
+        return Observable.create { [unowned self] observer -> Disposable in
+            
+            Alamofire.request(url, method: r.method, parameters: r.parameters, encoding: JSONEncoding.default, headers: self.headers).responseJSON { response in
+                switch response.result {
+                case .success:
+                    observer.onNext(String(describing: response.data))
+                    observer.onCompleted()
+                    
+                case .failure(let error):
+                    print(String(describing: error))
+                    observer.onError(error)
+                }
+                
+            }
+            return Disposables.create()
+        }
     }
     
-    
-    
-
-    
-//    func getWeatherInfo() {
-//        
-//        let weatherParameters = ["q": "Beijing", "appid": openWeatherAPIKey]
-//        
-//        Alamofire.request(openWeatherBaseUrlString, method: .get, parameters: weatherParameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
-//            
-//            guard response.result.isSuccess else {
-//                print("Error while fetching remote data:\(response)")
-//                return
-//            }
-//            print(response.result.value ?? "No Value")
-//        }
-//    }
 }

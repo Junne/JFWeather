@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import ObjectMapper
 
 
 public enum WeatherAPI {
@@ -42,7 +43,13 @@ struct WeatherRequest: JFRequest {
 }
 
 extension CurrentWeatherModel: JSONDecodable {
-    static func parse(data: Data) -> CurrentWeatherModel? {
-        return CurrentWeatherModel()
+    internal static func parse(json: [String : Any]) -> CurrentWeatherModel? {
+        return Mapper<CurrentWeatherModel>().map(JSON: json)
     }
+
+//    static func parse(data: Data) -> CurrentWeatherModel? {
+//        return CurrentWeatherModel(data: data)
+//    }
+    
+    
 }

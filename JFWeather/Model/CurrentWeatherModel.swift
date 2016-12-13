@@ -7,7 +7,19 @@
 //
 
 import Foundation
+import ObjectMapper
 
-struct CurrentWeatherModel {
+struct CurrentWeatherModel: Mappable {
     
+    var code: Int?
+    var message: String?
+    
+    init?(map: Map) {
+        
+    }
+    
+    mutating func mapping(map: Map) {
+        code    <- map["cod"]
+        message <- map["message"]
+    }
 }
