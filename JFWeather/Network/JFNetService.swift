@@ -10,12 +10,11 @@ import UIKit
 import Alamofire
 import RxSwift
 
-//let openWeatherAPIKey = "80d0f95a328777c02bcd358c813795e1"
-let openWeatherAPIKey = "b3e0155a067f8cdc5a2990e9aa83a222"
+let openWeatherAPIKey = "05cbb7dd309c75745cdd6b4183d7419c"
+//let openWeatherAPIKey = "b3e0155a067f8cdc5a2990e9aa83a222"
 
 
 protocol JSONDecodable {
-//    static func parse(data: Data) -> Self?
     static func parse(json: [String: Any]) -> Self?
 }
 
@@ -65,7 +64,7 @@ extension JFNetService: JFClient {
     public func send<T : JFRequest>(_ r: T, handler: @escaping (T.Response?) -> Void) {
         let url = host.appending(r.path)
         
-        Alamofire.request(url, method: r.method, parameters: r.parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
+        Alamofire.request(url, method: r.method, parameters: nil, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
             
             
             switch response.result {
@@ -77,28 +76,6 @@ extension JFNetService: JFClient {
             case .failure(let error):
                 print(error)
             }
-
-            
-//            guard response.result.isSuccess else {
-//                print("Error while fetching remote data:\(response)")
-//                return
-//            }
-//            
-//            print(response.result.value ?? "No Value")
-            
-//            let json = JSON(data: response.result.value)
-            
-            
-            
-            
-//            if let data = response.result.value {
-//                let json = JSON(data: response.result.value as! Data) {
-//                    let result = T.Response.parse(json: json)
-//                    handler(result)
-//                }
-//            }
-            
-//            handler(nil)
             
         }
         

@@ -22,7 +22,7 @@ struct WeatherRequest: JFRequest {
     var path: String {
         switch name {
         case .currentWeather:
-            return "/data/2.5/weather"
+            return "/data/2.5/weather?q=Beijing&appid=05cbb7dd309c75745cdd6b4183d7419c"
         }
     }
     
@@ -45,11 +45,5 @@ struct WeatherRequest: JFRequest {
 extension CurrentWeatherModel: JSONDecodable {
     internal static func parse(json: [String : Any]) -> CurrentWeatherModel? {
         return Mapper<CurrentWeatherModel>().map(JSON: json)
-    }
-
-//    static func parse(data: Data) -> CurrentWeatherModel? {
-//        return CurrentWeatherModel(data: data)
-//    }
-    
-    
+    } 
 }
